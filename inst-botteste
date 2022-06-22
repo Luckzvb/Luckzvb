@@ -1,0 +1,18 @@
+#!/bin/bash
+clear
+echo -e "\E[44;1;37m     INSTALACAO BOT AUTO-SSH BY CRAZY    \E[0m"
+echo -e "\nINSTALANDO AGUARDE...."
+apt update -y > /dev/null 2>&1 && apt install jq sshpass curl at apache2 php libapache2-mod-php php-curl -y > /dev/null 2>&1
+echo -e "\nCONFIGURANDO AGUARDE...."
+[[ ! -d $HOME/BOT ]] && mkdir $HOME/BOT
+[[ ! -d /var/www/html/_file_ ]] && mkdir /var/www/html/_file_
+chmod +x $(ls)
+mv $HOME/BOT/lib /var/www/html
+mv $HOME/BOT/comprar.php /var/www/html
+mv $HOME/BOT/notifica.php /var/www/html
+mv botteste /bin/autobot
+clear
+echo -e "\033[1;32mINSTALADO COM SUCESSO! \n\033[1;33mPARA ATIVAR  O BOT EXECULTE O COMANDO \033[1;32mautobot \
+\n\n\033[1;33mANTES DE ATIVAR CERTIFIQUE-SE QUE\nATIVOU O SSL NO DOMINIO DESSA VPS\n\nTAMBEM ADICONE AS CREDENCIAIS\nDO MERCADO PAGO NO ARQUIVOS compra.php e notifica.php \
+\n\033[1;31mCOMANDOS LOGO ABAIXO:\033[0m\nnano /var/www/html/compra.php\nnano /var/www/html/notifica.php"
+cd $HOME
