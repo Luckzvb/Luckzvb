@@ -58,9 +58,9 @@ rm -rf /root/stunnel.key
 fun_bar 'inst_ssl'
 echo -e "\033[1;33m                 CONFIGURANDO SSL.. "
 fun_bar 'inst_ssl'
-echo -e "\033[1;37m Mensaje en el mini Banner por defecto (SSL + Pay) \033[1;36m"
-echo -e "\033[1;37m Não exagerar no mini banner \033[1;36m"
-echo -e "\e[0;31m Soporta HTML\e[0m"
+echo -e "\033[1;37m Nao exagerar nas mensagens do mini banner (SSL + Pay) \033[1;36m"
+echo -e "\033[1;37m Porque pode dar defeito (SSL+PAY) \033[1;36m"
+echo -e "\e[0;31m SUPPORTE T.me/luftssh\e[0m"
 read -p " :" msgbanner
 [[ "$msgbanner" = "" ]]&& msgbanner="SSL + Pay"
 echo 
